@@ -31,11 +31,13 @@ module.exports = {
         "color-lightgrey": "#F1F1F1"
       },
       borderRadius: {
-        "radius-xs": "10px"
+        "radius-xs": "10px",
+        "radius-sm": "106px",
       },
       backgroundColor: {
         "bg-darkblack": "#111111",
-        "bg-lightyellow": "#FFF7EF"
+        "bg-lightyellow": "#FFF7EF",
+        "bg-orange": "#E67E22"
       }
 
     },

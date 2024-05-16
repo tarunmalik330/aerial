@@ -1,6 +1,6 @@
 import React from "react";
 import { ChooseLine } from "./common/IconImg";
-import { WhyChoose } from "./common/WhyChooseMapData";
+import { WhyChoose } from "./common/MapData";
 
 const WhyChooseUs = () => {
   return (
@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
               return (
                 <div
                   key={id}
-                  className="xl:w-[364px] lg:w-[30%] sm:w-5/12 w-full"
+                  className="xl:w-[364px] lg:w-[30%] sm:w-5/12 w-full flex max-sm:items-center max-sm:justify-center"
                 >
                   <div className="bg-white max-w-[364px] w-full h-full rounded-radius-xs px-3 pt-3 pb-4 border border-solid border-[border: 1px solid #0000001A]">
                     <img
