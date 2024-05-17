@@ -1,0 +1,24 @@
+.slick-dots li button:before {
+    content: unset !important;
+}
+
+.slick-dots li button {
+    width: 8.67px !important;
+    height: 8.67px !important;
+    border-radius: 50% !important;
+    background: #E67E2226 !important;
+    border: none !important;
+}
+
+.slick-dots li.slick-active button {
+    background: #E67E22 !important;
+    border: 5px solid #FAE5D3 !important;
+}
+
+.slick-dots {
+    bottom: -60px !important;
+}
+
+.swiper-button-lock {
+    display: flex !important;
+}

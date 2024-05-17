@@ -29,18 +29,24 @@ const WhyChooseUs = () => {
                   key={id}
                   className="xl:w-[364px] lg:w-[30%] sm:w-5/12 w-full flex max-sm:items-center max-sm:justify-center"
                 >
-                  <div className="bg-white max-w-[364px] w-full h-full rounded-radius-xs px-3 pt-3 pb-4 border border-solid border-[border: 1px solid #0000001A]">
+                  <div
+                    className={`bg-white max-w-[364px] min-h-[323px] hover:shadow-[0px_6px_19.5px_0px_rgba(0,0,0,0.1)] hover:border-transparent transition-all ease-linear duration-300 w-full h-full flex flex-col justify-between rounded-radius-xs px-3 pt-3 pb-4 border border-solid border-[#0000001A] ${
+                      id === 1 ? "flex flex-col-reverse justify-between" : ""
+                    }`}
+                  >
                     <img
                       src={card.img}
                       alt="whychoose img"
-                      className="w-full max-w-[340px] rounded-lg mb-4"
+                      className="w-full max-w-[340px] rounded-lg"
                     />
-                    <p className="capitalize font-semibold text-xl text-black mb-3 leading-lh-md">
-                      {card.head}
-                    </p>
-                    <p className="font-normal text-color-lightblack-xs text-base">
-                      {card.para}
-                    </p>
+                    <div className="">
+                      <p className="capitalize font-semibold text-xl text-black mb-3 leading-lh-md">
+                        {card.head}
+                      </p>
+                      <p className="font-normal text-color-lightblack-xs text-base pr-2">
+                        {card.para}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

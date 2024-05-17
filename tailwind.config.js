@@ -17,7 +17,8 @@ module.exports = {
         "lh-xxs": "120%",
         "lh-xsm": "130%",
         "lh-sm": "147%",
-        "lh-md": "150%"
+        "lh-md": "150%",
+        "lh-lg": "70%"
       },
       backgroundSize: {
         "bgsize": "100% 100%"
