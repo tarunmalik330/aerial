@@ -14,27 +14,27 @@ const TheNews = () => {
   const sliderRef = useRef(null);
   return (
     <>
-      <div className="xl:py-[150px] lg:py-[90px] md:py-[70px] sm:py-[55px] py-12">
+      <div className="xl:pb-[150px] lg:pb-[90px] md:pb-[70px] sm:pb-[55px] pb-12">
         <div className="container xl:max-w-[1164px] mx-auto px-3">
-          <div className="flex justify-between items-center mb-[34px]">
-            <div className="flex gap-4 flex-col">
+          <div className="flex justify-between sm:flex-row flex-col items-center lg:mb-[34px] sm:mb-6 mb-4">
+            <div className="flex sm:gap-4 gap-3 flex-col sm:mb-0 mb-3">
               {" "}
-              <p className="capitalize tracking-letterspacing-xs font-medium text-base leading-lh-md flex items-center gap-[11px]">
+              <p className="capitalize tracking-letterspacing-xs font-medium text-base leading-lh-md flex items-center max-lg:justify-center gap-[11px]">
                 <ChooseLine />
                 In The News
                 <ChooseLine />
               </p>
-              <h2 className="ff_hurmebold font-bold text-text-sm leading-lh-md">
+              <h2 className="ff_hurmebold font-bold sm:text-text-sm text-3xl lg:text-start text-center leading-lh-md">
                 Read <span className="ff_hurmethin font-thin">Our Blog to</span>{" "}
                 Learn More
               </h2>
             </div>
             <div className="flex gap-[10.1px]">
-              <button className="nextbtn">
-                <SliderRightArrow />
-              </button>
               <button className="prevbtn">
                 <SliderLeftArrow />
+              </button>
+              <button className="nextbtn">
+                <SliderRightArrow />
               </button>
             </div>
           </div>
@@ -48,11 +48,6 @@ const TheNews = () => {
               620: { slidesPerView: 2 },
             }}
             navigation={{ nextEl: ".nextbtn", prevEl: ".prevbtn" }}
-            pagination={{
-              type: "bullets",
-              clickable: true,
-              dynamicBullets: true,
-            }}
             modules={[Pagination, Navigation]}
           >
             {blogcard.map((blogitem, index) => (

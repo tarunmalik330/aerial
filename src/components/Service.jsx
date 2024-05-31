@@ -1,6 +1,6 @@
 import React from "react";
 import serviceline from "../assets/images/svg/smallline.svg";
-import { serviceslide } from "./common/MapData";
+import { serviceSlide } from "./common/MapData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -43,21 +43,21 @@ const Service = () => {
             Aerial Excellence
           </h2>
           <Slider ref={slider} {...settings}>
-            {serviceslide.map((slide, id) => {
+            {serviceSlide.map((obj, id) => {
               return (
                 <div
                   key={id}
-                  className="!flex lg:flex-row flex-col flex-wrap xl:justify-between justify-center max-xl:gap-9 items-center"
+                  className="!flex lg:flex-row flex-col flex-wrap xl:justify-between justify-center max-xl:gap-9 max-lg:gap-7 max-sm:gap-4  items-center"
                 >
                   <div className="xl:max-w-[526px] lg:max-w-[500px] w-ful l">
-                    <p className="text-text-md text-color-orange leading-lh-lg font-bold opacity-10">
-                      {slide.head}
+                    <p className="text-text-md text-color-orange sm:leading-lh-lg leading-lh-xl font-bold opacity-10">
+                      {obj.tittle}
                     </p>
                     <p className="ff_hurmebold font-bold text-text-xs text-black capitalize mb-4">
-                      {slide.heading2}
+                      {obj.heading}
                     </p>
                     <p className="text-base leading-lh-md text-color-lightblack-sm font-normal">
-                      {slide.content}
+                      {obj.description}
                     </p>
                   </div>
                   <div className="xl:max-w-[563px] lg:max-w-[435px] w-fu ll">

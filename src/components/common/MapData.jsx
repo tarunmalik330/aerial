@@ -8,67 +8,73 @@ import portfolioimg3 from "../../assets/images/png/portfolioimg3.png";
 import portfolioimg4 from "../../assets/images/png/portfolioimg4.png";
 import sportsimg from "../../assets/images/png/sportsimg.png";
 import cinemaimg from "../../assets/images/png/cinema-img.png";
+import costmerimg1 from "../../assets/images/png/costmer-img1.png";
+import costmerimg2 from "../../assets/images/png/costmer-img2.png";
+import costmerimg3 from "../../assets/images/png/costmer-img3.png";
 
 //================================ WhyChooseUs================================
-export const WhyChoose = [
+export const whyChoose = [
   {
     img: experience,
-    head: "Experience",
-    para: "With years of industry experience, we understand the unique challenges of each project.",
+    title: "Experience",
+    description:
+      "With years of industry experience, we understand the unique challenges of each project.",
   },
   {
     img: quality,
-    head: "Quality",
-    para: "We prioritize quality in every aspect of our service, from equipment to data analysis.",
+    title: "Quality",
+    description:
+      "We prioritize quality in every aspect of our service, from equipment to data analysis.",
   },
   {
     img: reliability,
-    head: "Reliability",
-    para: "Count on us for dependable, timely, and professional drone solutions.",
+    title: "Reliability",
+    description:
+      "Count on us for dependable, timely, and professional drone solutions.",
   },
 ];
 
 // =====================================Services=====================================
-export const serviceslide = [
+export const serviceSlide = [
   {
-    head: "01",
-    heading2: "Video Production",
-    content:
+    tittle: "01",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
   {
-    head: "02",
-    heading2: "Video Production",
-    content:
+    tittle: "02",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
   {
-    head: "03",
-    heading2: "Video Production",
-    content:
+    tittle: "03",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
   {
-    head: "04",
-    heading2: "Video Production",
-    content:
+    tittle: "04",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
   {
-    head: "05",
-    heading2: "Video Production",
-    content:
+    tittle: "05",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
   {
-    head: "06",
-    heading2: "Video Production",
-    content:
+    tittle: "06",
+    heading: "Video Production",
+    description:
       "Capture customer attention and serve emotionally engaging content by adding drone videos to your website and marketing materials. Promote your brand as cutting-edge, unique, and differentiated while helping your customers engage with your product in the best way possible.",
     img: videoproduction,
   },
@@ -95,61 +101,67 @@ export const blogcard = [
 ];
 
 // =========================Portfolio=========================
-export const thePortfolioSecData = [
+export const PortfolioCunten = [
   {
     id: 1,
     portfolio: portfolioimg1,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 2,
     portfolio: portfolioimg2,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 3,
     portfolio: portfolioimg3,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 4,
     portfolio: portfolioimg4,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 5,
     portfolio: portfolioimg1,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 6,
     portfolio: portfolioimg2,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 7,
     portfolio: portfolioimg3,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
   },
   {
     id: 8,
     portfolio: portfolioimg4,
     title: "Drones in Live Event Broadcasting in UAE",
-    content:
+    description:
       "The Rangers took home their first World Series win on Nov 1, but ...",
+  },
+];
+// ==============================Reviews==============================
+export const reviewsContent = [
+  {
+    img: costmerimg1,
   },
 ];

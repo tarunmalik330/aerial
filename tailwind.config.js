@@ -18,7 +18,8 @@ module.exports = {
         "lh-xsm": "130%",
         "lh-sm": "147%",
         "lh-md": "150%",
-        "lh-lg": "70%"
+        "lh-lg": "70%",
+        "lh-xl": "85%",
       },
       backgroundSize: {
         "bgsize": "100% 100%"
@@ -34,6 +35,7 @@ module.exports = {
       borderRadius: {
         "radius-xs": "10px",
         "radius-sm": "106px",
+        "radius-md": "100px"
       },
       backgroundColor: {
         "bg-darkblack": "#111111",

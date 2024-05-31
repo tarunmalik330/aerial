@@ -1,6 +1,6 @@
 import React from "react";
 import { ChooseLine } from "./common/IconImg";
-import { WhyChoose } from "./common/MapData";
+import { whyChoose } from "./common/MapData";
 
 const WhyChooseUs = () => {
   return (
@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
             Results
           </h2>
           <div className="flex flex-row flex-wrap xl:justify-between justify-center gap-6">
-            {WhyChoose.map((card, id) => {
+            {whyChoose.map((obj, id) => {
               return (
                 <div
                   key={id}
@@ -35,16 +35,16 @@ const WhyChooseUs = () => {
                     }`}
                   >
                     <img
-                      src={card.img}
+                      src={obj.img}
                       alt="whychoose img"
                       className="w-full max-w-[340px] rounded-lg"
                     />
                     <div className="">
                       <p className="capitalize font-semibold text-xl text-black mb-3 leading-lh-md">
-                        {card.head}
+                        {obj.title}
                       </p>
                       <p className="font-normal text-color-lightblack-xs text-base pr-2">
-                        {card.para}
+                        {obj.description}
                       </p>
                     </div>
                   </div>

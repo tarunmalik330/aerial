@@ -20,6 +20,7 @@ export const NavBtnArrow = () => {
 export const ChooseLine = () => {
   return (
     <svg
+      className="sm:w-[26px] sm:h-[4px] w-[20px] h-[2px]"
       width="26"
       height="4"
       viewBox="0 0 26 4"

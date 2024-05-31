@@ -1,6 +1,6 @@
 import React, { useRef, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { thePortfolioSecData } from "./common/MapData";
+import { PortfolioCunten } from "./common/MapData";
 import { Virtual } from "swiper/modules";
 import { SliderLeftArrow, SliderRightArrow } from "./common/IconImg";
 import "swiper/swiper-bundle.css";
@@ -29,7 +29,7 @@ const Portfolio = () => {
               Portfolio
               <img src={porfolioline} alt="porfolioline" />
             </p>
-            <h2 className="capitalize font-bold leading-lh-xxs ff_hurmebold text-text-sm">
+            <h2 className="capitalize font-bold leading-lh-xxs ff_hurmebold sm:text-text-sm text-center text-2xl">
               See <span className="ff_hurmethin font-thin">Our Work</span>{" "}
               Examples
             </h2>
@@ -59,24 +59,26 @@ const Portfolio = () => {
           loop={true}
           autoplay={{ delay: 500 }}
           speed={1000}
-          centeredSlides={true}
+          // centeredSlides={true}
           breakpoints={{
             556: { slidesPerView: 2 },
             920: { slidesPerView: 3 },
             1240: { slidesPerView: 4 },
           }}
         >
-          {thePortfolioSecData.map((item, index) => (
-            <SwiperSlide key={index} className="w-full max-w-[362px] !h-auto">
+          {PortfolioCunten.map((obj, i) => (
+            <SwiperSlide key={i} className="w-[362px] !h-auto">
               <div className="relative group">
                 <img
                   className="w-full duration-500 max-h-[506px] min-h-[506px] h-full group-hover:min-h-[550px] lg:group-hover:min-h-[603px] object-cover rounded-radius-xs"
-                  src={item.portfolio}
+                  src={obj.portfolio}
                   alt="portfolio"
                 />
                 <div className="absolute z-10 top-[60%] sm:top-[70%] max-w-[280px] xl:max-w-[319px] left-4 flex flex-col w-full h-full opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:duration-300">
-                  <p className="text-xl font-medium text-white">{item.title}</p>
-                  <p className="mt-2 text-white opacity-70">{item.content}</p>
+                  <p className="text-xl font-medium text-white">{obj.title}</p>
+                  <p className="mt-2 text-white opacity-70">
+                    {obj.description}
+                  </p>
                   <a
                     className="mt-4 text-lg font-medium text-color-orange"
                     href="#"

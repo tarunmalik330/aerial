@@ -4,6 +4,7 @@ import EveryNeed from './components/EveryNeed';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Portfolio from './components/Portfolio';
+import Reviews from './components/Reviews';
 import Service from './components/Service';
 import TheNews from './components/TheNews';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -19,6 +20,7 @@ function App() {
       <TheNews />
       <EveryNeed />
       <Portfolio />
+      <Reviews />
       <Footer />
 
     </>
